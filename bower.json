@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "jquery": "2",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jquery_lazyload": "^1.9.7"
   }
 }

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>photo list from raspi-tarou.</title>
+    <title>PHOTO LIST FROM RASPI-TAROU.</title>
     <link rel='stylesheet' href='/third_party/bootstrap/dist/css/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
     <script language='javascript' src='/third_party/jquery/dist/jquery.min.js'></script>
     <script language='javascript' src='/third_party/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script language='javascript' src='/third_party/jquery_lazyload/jquery.lazyload.js'></script>
     <script language='javascript' src='/javascripts/photos.js'></script>
   </head>
   <body>
     <div class="taking nodisplay">
       <p class="message">
-        taking a photo now.<br>
-        wait a minutes...
+        Taking A Photo Now.<br>
+        Plese Wait A Minutes...
       </p>
       <img src="/images/loading.svg" class="centering block" />
     </div>
     <main class="centering">
-      <h1>photo list from raspi-tarou.</h1>
+      <h1>PHOTO LIST FROM RASPI-TAROU.</h1>
       <div class="buttons margin-outer">
         <a href="/photos/take/" class="btn btn-primary btn-lg take-a-photo">take a photo!!</a>
       </div>
@@ -42,7 +43,7 @@
             <td><%= file.name %></td>
             <td class="thumb-cell">
               <a href="/photos/<%= file.name %>" >
-                <img src="/photos/<%= file.name %>" class="img-thumbnail" />
+                <img data-original="/photos/<%= file.name %>" class="img-thumbnail lazy" />
               </a>
             </td>
             <td><%= file.timestamp.toLocaleString() %></td>
