@@ -1,0 +1,10 @@
+{
+  "verbose": true,
+  "uid": "raspi-camera-web",
+  "append": true,
+  "watch": false,
+  "watchDirectory": "/home/pi/word/raspi-camera-web/",
+  "watchIgnore": "public/photos/**",
+  "script": "./bin/www",
+  "sourceDir": "/home/pi/work/raspi-camera-web/"
+}
